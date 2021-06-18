@@ -1,3 +1,4 @@
+'''
 def Camp():
     CampName = input("what is your camps name ")
     print(CampName)
@@ -16,19 +17,24 @@ def DaysToThirty():
 
     DaysTillThirty = 365*Years
     print(f"number of days till you are 30 {DaysTillThirty}")
+'''
+import time
 
 
+CURTIME = int(input("what time is it "))
 
+while True:
+   
+    if CURTIME % 100 == 59:
+        CURTIME = CURTIME - 59
+        CURTIME = CURTIME + 100
 
+    else:
+        CURTIME = CURTIME + 1
+    print(CURTIME)
+    time.sleep(1)
 
-
-
-
-
-
-
-
-
+   
 
 
 
